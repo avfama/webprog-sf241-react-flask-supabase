@@ -32,8 +32,6 @@ def delete_entry(id):
     supabase.table("guestbook").delete().eq("id", id).execute()
     return jsonify({"message": "Deleted successfully"}), 200
 
-import os
-
 # ... your other code ...
 
 if __name__ == '__main__':
